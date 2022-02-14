@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- NOMBRE DE LA PÁGINA -->
+
+    <title>Playlist de música</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb514b9f68.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- META -->
+
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/2622/PNG/512/podcast_icon_157488.png" type="image/x-icon">
+    <meta name="description" content="Podcast musical">
+
+</head>
+<body>
+    <header>
+        <p class="title">Podcast Anime</p>
+        <div class="spam">
+            <p>Aquí podrás escuchar podcasts y música de la mejor calidad gracias a:</p>
+            <a href="https://www.radioisekai.com" target="_blank"><button>Radio Isekai</button></a>
+        </div>
+    </header>
+
+    <div class="controlador">
+        <p class="label">
+            Volumen
+        </p>
+        <input type="range" min="0" max="100" value="50" id="fader" step="1" onchange="outputUpdate(value)"> <br>
+        <output for="fader" id="volumen">50</output>    
+    </div>
+
+    <div class="controlador2">
+        <button id="mute"><i class='bx bxs-volume-mute'></i></button>
+        <button id="pause"><i class='bx bx-pause-circle' ></i></button>
+    </div>
+    
+    <div class="otra">
+        <div>
+            <p>El otro día me aburrí e hice esto, espero que te diviertas:</p>
+            <a href="https://jotis1.github.io/Tic-Website/" target="_blank"><button>ALGO SECRETO</button></a>
+            <p class="detalle"><a class="hiden" href="https://github.com/Jotis1/Tic-Website" target="_blank">P</a>or cierto, si quieres que te enseñe el código de la página que a la que te mande el link lo tendrás disponible si clicas en la primera letra de esta frase</p>
+        </div>
+
+    </div>
+
+
+    <audio src="https://usa18.fastcast4u.com/proxy/radioisekai?mp=/1" id="audio"></audio>
+    <script src="../js/audio.js"></script>
+    
+</body>
+</html>

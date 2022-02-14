@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
+
+body {
+  background: linear-gradient(to left, #ffb957, #ffd9a6);
+}
+
+header {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+header:hover .title,
+header:hover .spam {
+  text-shadow: 0px 0px 15px #2ebfc4;
+  transition: ease-in 0.2s;
+}
+
+header .title {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 800;
+  font-size: 50px;
+  padding: 5vh;
+  background-color: #ffffff;
+  color: #2ec4b6;
+  text-shadow: 0px 0px 0px #2ec4b6;
+  border-radius: 0 0 25px 25px;
+  transition: ease-in 0.2s;
+}
+
+.spam {
+  width: 40%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #2ec4b6;
+  text-shadow: 0px 0px 0px #2ec4b6;
+  border-radius: 0 0 25px 25px;
+  line-height: 35px;
+  padding: 1vh;
+  transition: ease-in 0.2s;
+}
+
+.spam button {
+  background-color: #2ec4b6;
+  width: 50%;
+  min-width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: ease-in 0.2s;
+}
+
+.spam button:hover {
+  transform: scale(0.9);
+  transition: ease-in 0.2s;
+}
+
+.controlador {
+  display: block;
+  width: 40%;
+  position: relative;
+  margin: 50px auto;
+  margin-bottom: 15px;
+  background-color: #2ec4b6;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px #5f5f5f;
+}
+
+input[type="range"] {
+  height: 26px;
+  -webkit-appearance: none;
+  background-color: transparent;
+  margin: 10px 0;
+  width: 80%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  background: #ffbf69;
+  border-radius: 14px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #ffbf69;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  border-radius: 14px;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 20px;
+  width: 40px;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #50555c;
+  border: 0px solid #000000;
+  border-radius: 28px;
+  box-shadow: 1px 1px 1px #50555c;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #50555c;
+  border: 0px solid #000000;
+  border-radius: 28px;
+  box-shadow: 1px 1px 1px #50555c;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 40px;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #50555c;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #50555c;
+}
+
+.label {
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  padding-top: 20px;
+  color: white;
+}
+
+output {
+  display: block;
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.controlador2 {
+  display: block;
+  width: 40%;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #2ec4b6;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px #5f5f5f;
+}
+
+.controlador2 button {
+  height: 35px;
+  width: 30%;
+  margin: 10px auto;
+  background-color: #ffbf69;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+}
+
+.controlador2 button:hover {
+  transform: scale(0.9);
+  transition: ease-in 0.2s;
+}
+
+.otra {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 20%;
+  min-height: 300px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.otra div {
+  opacity: 0;
+  display: block;
+  padding: 1vh;
+  position: relative;
+  margin: 60px auto;
+  background-color: #2ec4b6;
+  width: 60%;
+  border-radius: 25px;
+  transition: ease-in-out 0.2s;
+}
+
+.otra div:hover {
+  opacity: 1;
+  transition: ease-in 0.2s;
+}
+.otra div p {
+  color: white;
+  font-size: 1.1em;
+}
+
+.otra div button {
+  margin: 10px;
+  width: 30%;
+  height: 35px;
+  background-color: white;
+  box-shadow: 3px 3px 1px 1px #ffbf69;
+  border: none;
+  border-radius: 5px;
+  color: #2ec4b6;
+  font-weight: 600;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+}
+
+.otra div button:hover {
+  box-shadow: -3px -3px 1px 1px white;
+  background-color: #ffbf69;
+  color: white;
+  transition: ease-in 0.2s;
+}
+
+.detalle {
+  transform: translateY(50px);
+  opacity: 0;
+  position: relative;
+  min-height: 150px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  color: #2ebfc4 !important;
+  line-height: 75px;
+  padding: 5px;
+  transition: ease-in-out 0.3s;
+}
+.otra:hover .detalle {
+  opacity: 1;
+  transform: translateY(0);
+  display: block;
+  transition: ease-in-out 0.3s;
+}
+
+.hiden {
+  text-decoration: none;
+  color: #2ebfc4;
+}
